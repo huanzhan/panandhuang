@@ -1,0 +1,39 @@
+#left-pane > div > div {
+  height: 28px;
+  line-height: 28px;
+  margin: 5px 0;
+}
+
+#login-error {
+  color: red;
+}
+
+#left-pane input {
+  width: 300px;
+}
+
+#login-buttons button {
+  margin: 20px 0;
+}
+
+#login-buttons button {
+	margin-left: 180px;
+	font-size: 14px;
+	width: 120px;
+}
+
+#left-pane {
+	width: 300px;
+	float: left;
+}
+
+#right-pane {
+	width: 500px;
+	float: right;
+}
+
+#signup {
+	margin: 10px 0 120px 0;
+	text-align: right;
+	width: 300px;
+}

@@ -1,0 +1,476 @@
+
+/**
+  * Generic settings (lowest priority)
+  * Defines the most general styles that will be used repeatly.
+  * The objective is to make the style across page consistent.
+  */
+body {
+  font-family: verdana, geneva, sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+header {
+  padding: 20px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+footer {
+  border-top: 1px dotted gray;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  font-size: .75em;
+  color: gray;
+  margin-top: 20px;
+}
+
+*:focus {
+  outline: none;
+}
+
+input, select, button, textarea {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;	
+}
+
+input, select, button {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 5px;
+}
+
+input, select, textarea {
+  background-color: #ffffe6;
+  border: 1px solid gray;
+}
+
+input:disabled, select:disabled, textarea:disabled {
+  background: #f8f8f8;
+}
+	
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+}
+
+input[type="file"] {
+  padding-left: 2px !important;
+  padding-top: 2px !important;
+}
+	
+input[type="number"] {
+  padding-right: 2px !important;
+}
+	
+button {
+  font-family: verdana, geneva, sans-serif;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+textarea {
+  padding: 5px;
+}
+
+/**
+  * Architecture system (medium priority)
+  * The whole page has three hierachies: container, widget, and component.
+  * For each hierachy, basically defines the padding and margin.
+  * Also defines the horizontal and vertical alignment.
+  */
+
+.hz-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hz-vertical {
+  display: block;
+}
+
+.hz-container {
+  padding: 6px 12px; /* space between container and its widgets */
+  margin: 10px 0; /* space between containers */
+}
+
+.hz-widget {
+  margin: 3px;
+}
+
+.hz-component {
+  margin: 1px;
+}
+
+.hz-checkboxradio-wrapper {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;	
+  border: 1px solid #dcdcdc;
+  padding: 0 5px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #f8f8f8;
+  font-size: .875em;
+}
+
+/**
+  * Third party widgets (medium priority)
+  * Customize third party widgets (e.g. JQuery UI) to make them have
+  * consistent style with the page.
+  */
+
+.ui-tooltip-content {
+  font-size: .75em; 
+}
+
+.dataTable {
+  font-size: .875em; 
+}
+
+table.dataTable thead th {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+table.dataTable tbody td {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 48px;
+}
+
+table.datatable td input[type="checkbox"] {
+  padding: 0;
+  margin: 0;
+}
+
+table.datatable tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table.datatable td {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+table.datatable td img:hover {
+  cursor: pointer;
+}
+
+table.datatable tr:hover td, table.datatable tr.altrow:hover {
+  background-color: #eaeaea;
+}
+
+.dataTables_wrapper input, .dataTables_wrapper select {
+  vertical-align: middle;
+}
+
+.dataTables_filter input {
+  width: 300px;
+}
+
+div.dataTables_filter input {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  outline: 0;  
+}
+
+.ui-dialog {
+  font-size: .875em;
+  margin-top: 50px;
+  box-shadow: 4px 4px 2px #888888;
+}
+
+.ui-widget-overlay {
+  opacity: .30;
+  filter: Alpha(Opacity=30);
+}
+
+/**
+ *  User-defined widgets (medium priority)
+ */
+
+.hz-popup {
+  font-size: 1em;
+}
+
+.hz-popup-row1, .hz-popup-row2, hz-popup-row3 {
+  margin: 6px 0;
+}
+
+.hz-popup-row1 > label {
+  width: 20%;
+  margin-left: 20px;
+}
+
+.hz-popup-row1 > input, .hz-popup-row1 > textarea, .hz-popup-row1 > div {
+  width: 70%;
+}
+
+.hz-popup-row2 > div {
+  width: 20%;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.hz-popup-row2 > div > label {
+  width: 50%;
+}
+
+.hz-popup-row3 > label {
+  width: 20%;
+  margin-left: 20px;
+}
+
+.hz-popup-row3 > input {
+  width: 49%;
+}
+
+.hz-popup-row3 > button {
+  width: 20%;
+}
+
+.hz-popup-row4 {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/**
+ * Others (medium priority)
+ * Handles some special cases that are not directly related to the architecture.
+ */
+
+.hz-no-gutter {
+  margin: 0 -3px;
+}
+
+.invalidInput {
+  border-color: #b30000;
+}
+
+/**
+  * Page layout (highest priority)
+  */
+#wrapper {
+  min-width: 998px;
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid gray;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#menu {
+  float: left;
+  list-style-type: none;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#menu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  font-size: .875em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#menu a:active {
+  background-color: #e0e0e0;
+}
+
+#menu > li:not(last-child) {
+  float: left;
+}
+
+#menu a:hover {
+  cursor: pointer;
+  background-color: #666;
+  color: #fff;
+}
+
+#utility {
+  padding-left: 20px;
+}
+
+#utility > div {
+  margin-right: 20px;
+}
+
+#utility button {
+  font-weight: bold;
+  min-width: 80px;
+  font-size: .875em;
+}
+
+#content {
+  min-height: 600px;
+  overflow: hidden;
+  padding: 0 20px;
+  font-size: .875em;
+}
+
+/**
+ * Specific handling (highest priority)
+ * Most likely defines the width, and some style that will only be used once.
+ */
+#account {
+  float: right;
+  height: 30px;
+  padding-right: 20px;
+}
+
+#logout-btn {
+	font-size: .75em; 
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: #999;
+	border: 1px solid #000;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	margin-top: 5px;
+}
+
+#generic-alert-popup {
+	text-align: center;
+	font-size: .75em;
+	font-weight: bold;
+}
+
+/* Deals page */
+#claim-deal-popup-alert {
+  color: #cc0000;
+}
+
+#claim-deal-popup-alert > span {
+  margin-left: 20px;
+}
+
+#upload-deal-entry, #verify-deal-entry {
+  width: 200px;
+  color: gray;
+}
+
+#deal-type-list {
+  width: 100px;
+}
+
+#upload-deal-format-popup input[type="radio"] {
+  width: 16px;
+}
+
+/* Options page */
+#update-option-popup-qty, #update-option-popup-total-labeled, #update-option-popup-total-shipped {
+  display: none;
+}
+
+#select-doctor {
+  width: 100px;
+}
+
+/* Charts page */
+#chart-holder {
+  width: 90%;
+  height: 600px;
+  margin: 20px auto;
+}
+
+#billing-table th:nth-child(2), #billing-table th:nth-child(3), #billing-table th:nth-child(4) {
+  text-align: right;
+}
+
+#billing-table th:nth-child(5) {
+  padding-left: 40px;
+}
+
+/**
+  * Button styles.
+  */
+.btn-red, .btn-red:focus {
+  color: #fff !important;
+  background-color: #d14836;
+  background-image: -webkit-linear-gradient(top, #dd4b39, #d14836);
+  background-image: -moz-linear-gradient(top, #dd4b39, #d14836);
+  background-image: -ms-linear-gradient(top, #dd4b39, #d14836);
+  background-image: -o-linear-gradient(top, #dd4b39, #d14836);
+  background-image: linear-gradient(top, #dd4b39, #d14836);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
+
+.btn-red:hover {
+  background-color: #c53727;
+  background-image: -webkit-linear-gradient(top, #dd4b39, #c53727);
+  background-image: -moz-linear-gradient(top, #dd4b39, #c53727);
+  background-image: -ms-linear-gradient(top, #dd4b39, #c53727);
+  background-image: -o-linear-gradient(top, #dd4b39, #c53727);
+  background-image: linear-gradient(top, #dd4b39, #c53727);	
+}
+
+.btn-gray {
+  color: #444;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+  border: 1px solid #dcdcdc;
+}
+
+.btn-disabled {
+  color: #fff;
+  background-color: #eaeaea;
+  border: 1px solid #dcdcdc;
+}
+
+.btn-disabled:hover {
+  cursor: auto;
+}
+
+.search-box {
+  display: inline-block;
+}
+
+.search-box > input {
+  padding-right: 39px;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+}
+
+.search-box > button {
+  margin-left: -34px;
+  height: 32px;
+}
+
+
+

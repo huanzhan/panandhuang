@@ -1,0 +1,173 @@
+
+/* Generic */
+#form {
+	font-size: 14px;
+	width: 500px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px dotted gray;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#form input {
+	height: 28px;
+	line-height: 28px;
+	background-color: #FFFFB8;
+	padding: 0 5px;
+	border: 1px solid gray;
+}
+
+#form input[type='radio'] {
+	width: 16px;
+	margin: 0;
+}
+
+#form input[type='checkbox'] {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+	margin: 0;
+}
+
+#form select {
+	height: 28px;
+	background-color: #FFFFB8;
+	padding: 0 5px;
+	border: 1px solid gray;
+	width: 80px;
+}
+
+#form > li {
+	padding: 10px 10px;
+	overflow: hidden;
+}
+
+#form > li > div {
+	float: left;
+	height: 28px;
+	line-height: 28px;
+}
+
+#form > li > div:nth-child(1) {
+	width: 110px;
+	font-weight: bold;
+}
+
+#form > li > div:nth-child(2) {
+	width: 370px;
+}
+
+#form > li > div > input {
+	width: 370px;
+}
+ 
+/* Name */
+#form > #name > div:nth-child(1) {
+	width: 110px;
+}
+
+#form > #name > div:nth-child(2) {
+	width: 120px;
+}
+
+#form > #name > div:nth-child(3) {
+	font-weight: bold;
+	width: 102px;
+	padding-left: 28px;
+}
+
+#form > #name > div:nth-child(4) {
+	width: 120px;
+}
+
+#form > #name > div > input {
+	width: 120px;
+}
+
+#form #dob > div > input {
+	width: 160px;
+}
+
+/* Agreement */
+#form > #agreement > div:nth-child(1) {
+	width: 30px;
+	padding-top: 7px;
+}
+
+#form > #agreement > div:nth-child(2) {
+	width: 450px;
+}
+
+#form > #agreement > div > input {
+	width: 20px;
+}
+
+/* Address2 */
+#form > #address2 > div:nth-child(1) {
+	width: 110px;
+}
+
+#form > #address2 > div:nth-child(2) {
+	width: 120px;
+}
+
+#form > #address2 > div:nth-child(3) {
+	font-weight: bold;
+	width: 90px;
+	padding-left: 40px;
+}
+
+#form > #address2 > div:nth-child(4) {
+	width: 120px;
+}
+
+#form > #address2 > div > input {
+	width: 120px;
+}
+
+/* Comment */
+#form > #comment > div {
+	height: 60px;
+}
+
+#form > #comment > div > textarea {
+	width: 370px;
+	height: 60px;
+	background-color: #FFFFB8;
+	padding: 5px;
+	border: 1px solid gray;
+}
+
+/* Gender */
+#form > #gender > div:nth-child(1) {
+	width: 110px;
+}
+
+#form > #gender > div:nth-child(2) {
+	width: 30px;
+}
+
+#form > #gender > div:nth-child(3) {
+	width: 100px;
+}
+
+#form > #gender > div:nth-child(4) {
+	width: 30px;
+}
+
+#form > #gender > div:nth-child(5) {
+	width: 100px;
+}
+
+#form > #submit {
+	text-align: right;
+}
+
+#form > #submit > button {
+	width: 100px;
+}
+
+
